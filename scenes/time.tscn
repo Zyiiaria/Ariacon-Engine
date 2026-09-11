@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cuw8jvswjhonc"]
+
+[ext_resource type="Script" uid="uid://5h7jvmcsxd2d" path="res://scripts/time.gd" id="1_hxfg6"]
+
+[node name="time" type="Node2D" unique_id=251874860]
+script = ExtResource("1_hxfg6")
+
+[node name="canvaspos" type="CanvasLayer" parent="." unique_id=564065020]
+
+[node name="black" type="ColorRect" parent="canvaspos" unique_id=1642193023]
+offset_left = -28.0
+offset_top = -21.0
+offset_right = 1942.0
+offset_bottom = 1112.0
+color = Color(0, 0, 0, 1)
+
+[node name="clock" type="Label" parent="canvaspos" unique_id=1557729851]
+offset_left = 2.0
+offset_top = -5.0
+offset_right = 332.0
+offset_bottom = 106.0

@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://co1u7bi6wpnxx"]
+
+[ext_resource type="Texture2D" uid="uid://bjqfhrcfnmkxu" path="res://images/black.png" id="1_v0c70"]
+[ext_resource type="Script" uid="uid://b81r3mbgfgvpi" path="res://scripts/endfade.gd" id="2_upeor"]
+[ext_resource type="Texture2D" uid="uid://sq7jr6dl46qj" path="res://images/endnighttext.png" id="3_kpscb"]
+[ext_resource type="Script" uid="uid://331ymrdfb2at" path="res://scripts/endclick.gd" id="4_vpvu1"]
+
+[node name="endnight" type="Node2D" unique_id=2067718887]
+
+[node name="bg" type="Sprite2D" parent="." unique_id=316073343]
+position = Vector2(964, 548)
+scale = Vector2(1.0322917, 1.0527778)
+texture = ExtResource("1_v0c70")
+
+[node name="text" type="Sprite2D" parent="." unique_id=364981785]
+position = Vector2(969, 554)
+scale = Vector2(0.7322405, 0.73224044)
+texture = ExtResource("3_kpscb")
+
+[node name="black" type="ColorRect" parent="." unique_id=628177125]
+offset_left = -50.0
+offset_top = -28.0
+offset_right = 1971.0
+offset_bottom = 1104.0
+color = Color(0, 0, 0, 1)
+script = ExtResource("2_upeor")
+
+[node name="clicky" type="Control" parent="." unique_id=926234167]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -21.0
+offset_top = -12.0
+offset_right = 1943.0
+offset_bottom = 1094.0
+script = ExtResource("4_vpvu1")

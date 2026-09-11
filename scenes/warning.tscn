@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://c4y5t0meyklwn"]
+
+[ext_resource type="Texture2D" uid="uid://bjqfhrcfnmkxu" path="res://images/black.png" id="1_18pth"]
+[ext_resource type="Script" uid="uid://dsbp28ivgxcs6" path="res://scripts/changescene.gd" id="1_vjpo3"]
+[ext_resource type="Texture2D" uid="uid://cum20rgykmu75" path="res://images/powered.png" id="2_28mqh"]
+[ext_resource type="Script" uid="uid://wp0asqonrlum" path="res://scripts/fadeintro1.gd" id="3_18pth"]
+[ext_resource type="Texture2D" uid="uid://6mbq566exlke" path="res://images/warning_temp.png" id="4_2syyi"]
+[ext_resource type="Script" uid="uid://b5jfucn77r67f" path="res://scripts/fadeintro2.gd" id="5_28mqh"]
+[ext_resource type="Texture2D" uid="uid://dwoh60yry85x7" path="res://images/intro_what.png" id="7_8yo3a"]
+[ext_resource type="Script" uid="uid://dgh635a6664ac" path="res://scripts/fadeintro3.gd" id="8_2syyi"]
+
+[node name="Warning" type="Node2D" unique_id=1704285356]
+script = ExtResource("1_vjpo3")
+
+[node name="background" type="Sprite2D" parent="." unique_id=1244919628]
+position = Vector2(966.5, 549.5)
+scale = Vector2(1.0098958, 1.0398148)
+texture = ExtResource("1_18pth")
+
+[node name="powered" type="Sprite2D" parent="." unique_id=2099977903]
+position = Vector2(965, 550)
+scale = Vector2(0.6642598, 0.6642599)
+texture = ExtResource("2_28mqh")
+script = ExtResource("3_18pth")
+
+[node name="warning" type="Sprite2D" parent="." unique_id=1620399213]
+position = Vector2(965, 574)
+scale = Vector2(1.3875296, 1.4082148)
+texture = ExtResource("4_2syyi")
+script = ExtResource("5_28mqh")
+
+[node name="doing?" type="Sprite2D" parent="." unique_id=1066927106]
+position = Vector2(961, 553)
+scale = Vector2(1.5172415, 1.5172414)
+texture = ExtResource("7_8yo3a")
+script = ExtResource("8_2syyi")

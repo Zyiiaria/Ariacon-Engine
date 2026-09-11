@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dkp24cn8sipnl"]
+
+[ext_resource type="Shader" uid="uid://cqmhycq52d1l3" path="res://shaders/pixelateworld.gdshader" id="1_k24ul"]
+[ext_resource type="Script" uid="uid://c4tcttmhsgo78" path="res://scripts/visibilitytrain.gd" id="1_wnydu"]
+[ext_resource type="Texture2D" uid="uid://ddim1ww1mygl6" path="res://images/train-1.0.png" id="2_wnydu"]
+[ext_resource type="Script" uid="uid://b6v5kmuhmwg0x" path="res://scripts/trainmovement.gd" id="3_dm0fb"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nmg35"]
+shader = ExtResource("1_k24ul")
+shader_parameter/change_interval = 0.01
+shader_parameter/pinch = 0.5
+shader_parameter/curvature = 2.0
+shader_parameter/center_x = 0.5
+shader_parameter/center_y = 0.5
+
+[node name="trainstay" type="Node2D" unique_id=374368745]
+script = ExtResource("1_wnydu")
+
+[node name="train" type="Sprite2D" parent="." unique_id=2022582997]
+material = SubResource("ShaderMaterial_nmg35")
+position = Vector2(967, 557.4999)
+scale = Vector2(1.7325767, 1.8586006)
+texture = ExtResource("2_wnydu")
+script = ExtResource("3_dm0fb")

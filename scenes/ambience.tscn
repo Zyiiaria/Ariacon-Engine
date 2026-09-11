@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bgtfm0oby6cwe"]
+
+[ext_resource type="Script" uid="uid://c0r2trqjwab77" path="res://scripts/ambience.gd" id="1_hqyt6"]
+[ext_resource type="AudioStream" uid="uid://dxt1hedykf1sh" path="res://sounds/ambience.mp3" id="1_hu8jf"]
+
+[node name="ambience" type="Node2D" unique_id=1212353760]
+
+[node name="loop" type="AudioStreamPlayer" parent="." unique_id=1510773483]
+stream = ExtResource("1_hu8jf")
+volume_db = 3.0
+parameters/looping = true
+script = ExtResource("1_hqyt6")

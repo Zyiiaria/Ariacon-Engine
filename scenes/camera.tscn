@@ -1,0 +1,262 @@
+[gd_scene format=3 uid="uid://co0dumcgtogj0"]
+
+[ext_resource type="Shader" uid="uid://bm0dpcgdnctnw" path="res://shaders/camera.gdshader" id="3_r4u8i"]
+[ext_resource type="Texture2D" uid="uid://b8hflmbsiu3qg" path="res://images/lens.png" id="3_ys67x"]
+[ext_resource type="Texture2D" uid="uid://dwu2x114yko2r" path="res://images/closecamera.png" id="4_b05li"]
+[ext_resource type="Texture2D" uid="uid://c6u80e7a36d3i" path="res://images/camera/cam 1.png" id="4_emde6"]
+[ext_resource type="Texture2D" uid="uid://dswoutrqioi54" path="res://images/camera/cam 2.png" id="5_a8fsm"]
+[ext_resource type="Script" uid="uid://dvq8ajyxlwmst" path="res://scripts/cameraexit.gd" id="5_b05li"]
+[ext_resource type="Texture2D" uid="uid://1h0ea1lykxpp" path="res://images/static/1.png" id="5_yuspk"]
+[ext_resource type="Texture2D" uid="uid://brugopglwwgnb" path="res://images/camera/cam 3.png" id="6_10nc8"]
+[ext_resource type="Texture2D" uid="uid://dofg3x3xtcwmp" path="res://images/static/2.png" id="6_qk270"]
+[ext_resource type="Texture2D" uid="uid://dt47wosm14wom" path="res://images/camera/cam 4.png" id="7_6vhku"]
+[ext_resource type="Texture2D" uid="uid://cojohtfrgcsyi" path="res://images/static/3.png" id="7_c2ops"]
+[ext_resource type="Texture2D" uid="uid://jk5bbretpb1l" path="res://images/static/4.png" id="8_5l7oh"]
+[ext_resource type="Texture2D" uid="uid://ex21i6ht6od3" path="res://images/camera/cam 5.png" id="8_8e02y"]
+[ext_resource type="Texture2D" uid="uid://bq0n4dr5m2qqf" path="res://images/camera/cam 6.png" id="9_bj7ua"]
+[ext_resource type="Texture2D" uid="uid://dggb0ur616vm4" path="res://images/static/5.png" id="9_mw8lm"]
+[ext_resource type="Texture2D" uid="uid://7nqutfi27jmv" path="res://images/camera/cam 7.png" id="10_4q2dj"]
+[ext_resource type="Texture2D" uid="uid://ksaiqjt476vx" path="res://images/static/6.png" id="10_iu2a0"]
+[ext_resource type="Script" uid="uid://bkfknsmquum62" path="res://scripts/cammovement.gd" id="11_10nc8"]
+[ext_resource type="Texture2D" uid="uid://dypwta2u8xev5" path="res://images/static/7.png" id="11_opdby"]
+[ext_resource type="Texture2D" uid="uid://dsjk0vyljbpat" path="res://images/static/8.png" id="12_gf3pk"]
+[ext_resource type="Texture2D" uid="uid://bf0afqqvr0ali" path="res://images/static/9.png" id="13_i023m"]
+[ext_resource type="Texture2D" uid="uid://daix823pirfto" path="res://images/static/10.png" id="14_r4u8i"]
+[ext_resource type="Texture2D" uid="uid://1qtq8282j2u4" path="res://images/static/11.png" id="15_emde6"]
+[ext_resource type="Texture2D" uid="uid://cp0524ubjrqvh" path="res://images/static/12.png" id="16_a8fsm"]
+[ext_resource type="Texture2D" uid="uid://cf3n1hxgwpobw" path="res://images/static/13.png" id="17_10nc8"]
+[ext_resource type="Texture2D" uid="uid://oth0pph0amx5" path="res://images/static/14.png" id="18_6vhku"]
+[ext_resource type="Texture2D" uid="uid://d0ws7t6jit5ll" path="res://images/cameraleft.png" id="20_qk270"]
+[ext_resource type="Texture2D" uid="uid://c3svaprutpite" path="res://images/cameraright.png" id="21_c2ops"]
+[ext_resource type="Script" uid="uid://epsb0r7qlef6" path="res://scripts/staticmenu.gd" id="26_6vhku"]
+[ext_resource type="Script" uid="uid://dw54hrjaegjp5" path="res://scripts/cameraleft.gd" id="29_a8fsm"]
+[ext_resource type="Script" uid="uid://bv65lbd2b3r3v" path="res://scripts/cameraright.gd" id="30_emde6"]
+[ext_resource type="Script" uid="uid://vybbeqvhwvs2" path="res://scripts/camlabel.gd" id="34_8e02y"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fn6ni"]
+shader = ExtResource("3_r4u8i")
+shader_parameter/change_interval = 0.03
+shader_parameter/flash_darkness = 0.0
+shader_parameter/scanline_strength = 0.25
+shader_parameter/scanline_count = 400.0
+shader_parameter/curvature = 0.04
+shader_parameter/rgb_shift = 0.0015
+shader_parameter/vignette_strength = 0.35
+shader_parameter/flicker_strength = 0.03
+shader_parameter/noise_strength = 0.015
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k28w8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_emde6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_a8fsm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_10nc8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_6vhku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8e02y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_bj7ua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_4q2dj")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bj7ua"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_yuspk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qk270")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_c2ops")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5l7oh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_mw8lm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_iu2a0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_opdby")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_gf3pk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_i023m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_r4u8i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_emde6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_a8fsm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_10nc8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_6vhku")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 24.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8e02y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_yuspk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qk270")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_c2ops")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5l7oh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_mw8lm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_iu2a0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_opdby")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_gf3pk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_i023m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_r4u8i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_emde6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_a8fsm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_10nc8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_6vhku")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 32.0
+}]
+
+[node name="camera" type="Node2D" unique_id=457165539]
+
+[node name="camerabg" type="AnimatedSprite2D" parent="." unique_id=1118488957]
+material = SubResource("ShaderMaterial_fn6ni")
+position = Vector2(962.9999, 544)
+scale = Vector2(1.6619807, 1.7632734)
+sprite_frames = SubResource("SpriteFrames_k28w8")
+script = ExtResource("11_10nc8")
+
+[node name="camerastatic" type="AnimatedSprite2D" parent="." unique_id=1516347117]
+position = Vector2(960, 558)
+scale = Vector2(3.8749998, 3.0175)
+sprite_frames = SubResource("SpriteFrames_bj7ua")
+script = ExtResource("26_6vhku")
+
+[node name="lens" type="Sprite2D" parent="." unique_id=1904830553]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(956.5, 544)
+scale = Vector2(1.5257812, 1.5416665)
+texture = ExtResource("3_ys67x")
+
+[node name="camnumber" type="Label" parent="." unique_id=1994711543]
+offset_left = 553.0
+offset_top = 12.0
+offset_right = 1388.0
+offset_bottom = 385.0
+text = "if you see this you are a blacky"
+script = ExtResource("34_8e02y")
+
+[node name="static" type="AnimatedSprite2D" parent="." unique_id=92323405]
+position = Vector2(989, 559.5)
+scale = Vector2(3.875, 3.0175)
+sprite_frames = SubResource("SpriteFrames_8e02y")
+frame = 1
+frame_progress = 0.42120218
+
+[node name="cameraButton" type="TouchScreenButton" parent="." unique_id=881865797]
+position = Vector2(24, 908.00006)
+scale = Vector2(0.84269667, 0.8426966)
+texture_normal = ExtResource("4_b05li")
+texture_pressed = ExtResource("4_b05li")
+script = ExtResource("5_b05li")
+
+[node name="selectWindow" type="Control" parent="cameraButton" unique_id=812774837]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 664.5333
+offset_bottom = 179.18665
+
+[node name="leftCamera" type="TouchScreenButton" parent="." unique_id=1328343415]
+position = Vector2(1584, 908.00006)
+scale = Vector2(0.84269667, 0.8426966)
+texture_normal = ExtResource("20_qk270")
+texture_pressed = ExtResource("20_qk270")
+script = ExtResource("29_a8fsm")
+
+[node name="selectWindow" type="Control" parent="leftCamera" unique_id=47743451]
+layout_mode = 3
+anchor_left = -0.0068198894
+anchor_right = -0.0068198894
+offset_right = 175.62665
+offset_bottom = 179.18665
+metadata/_edit_use_anchors_ = true
+
+[node name="rightCamera" type="TouchScreenButton" parent="." unique_id=1160920335]
+position = Vector2(1751.9998, 908.00006)
+scale = Vector2(0.84269667, 0.8426966)
+texture_normal = ExtResource("21_c2ops")
+texture_pressed = ExtResource("21_c2ops")
+script = ExtResource("30_emde6")
+
+[node name="selectWindow" type="Control" parent="rightCamera" unique_id=1705163879]
+layout_mode = 3
+anchor_left = -0.0068198894
+anchor_right = -0.0068198894
+offset_right = 175.62665
+offset_bottom = 179.18665
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="cameraButton" to="cameraButton" method="_on_touch_screen_button_pressed"]
+[connection signal="pressed" from="leftCamera" to="leftCamera" method="_pressed"]
+[connection signal="mouse_entered" from="leftCamera/selectWindow" to="leftCamera" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="leftCamera/selectWindow" to="leftCamera" method="_on_mouse_exited"]
+[connection signal="pressed" from="rightCamera" to="rightCamera" method="_pressed"]
+[connection signal="mouse_entered" from="rightCamera/selectWindow" to="rightCamera" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="rightCamera/selectWindow" to="rightCamera" method="_on_mouse_exited"]
