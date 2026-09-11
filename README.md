@@ -1,5 +1,5 @@
 # Ariacon Engine
-This engine is a remake in Godot of a *Five Nights At Freddy's* fangame made by Ashzrii.
+This engine is a remake in Godot of a *Five Nights At Freddy's* fangame made by Ashzrii!!
 ## Status
 **This engine is a very early state, expect alot of unfinished stuff and bugs and things that aren't accurate to the original game.**
 
