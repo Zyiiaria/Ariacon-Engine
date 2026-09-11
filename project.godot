@@ -1,0 +1,53 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Train Watching: Ariacon Engine"
+config/description="the awesomee recreation of Ashzrii's former fnaf fangame but in godot!!!1!1!!!"
+config/version="v0.1.0"
+run/main_scene="res://scenes/warning.tscn"
+config/features=PackedStringArray("4.7", "Forward Plus")
+config/icon="uid://dlaqpx8x7r2uu"
+
+[autoload]
+
+Ambience="*uid://bgtfm0oby6cwe"
+Global="*uid://dsd3q8n4rojjt"
+Trainstay="*uid://dkp24cn8sipnl"
+Statictransition="*uid://r7lyjx7a0ydd"
+Globalmovement="*uid://d2kxoe0fcoprg"
+TimeNight="*uid://cuw8jvswjhonc"
+Debug="*uid://hae8014pm8te"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[importer_defaults]
+
+animation_library={
+&"import_script/path": "res://scripts/"
+}
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
