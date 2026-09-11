@@ -7,8 +7,6 @@ We are planning to update this engine in the future when we feel like it's the n
 ## How to Use
 Please use **Godot 4.7.2**, but any other version should work fine from 4.x.
 
-The *main branch* is where you can download the godot project, and in the *releases branch*.. is where you can just play the game.. if you want to for whatever reason.
-
 All **scripts, images, scenes** are stored in **separate folders** inside the godot project, and it is recommended to open the whole folder instead of just the godot project itself.
 ## Developing/Using
 This project is only developed by **Ashzrii** and **Zyiiaria**, and we probably won't let anyone join our duo team in making this project, if you plan on posting a fangame you made using this engine, please credit us in the description (or something like that).
